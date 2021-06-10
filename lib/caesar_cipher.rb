@@ -15,5 +15,3 @@ end
 def caesar_cipher(message, number)
   message.chars.map {|letter| letter_transpose(letter, number)}.join
 end
-
-p caesar_cipher("What a string!", 5)
