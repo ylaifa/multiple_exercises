@@ -12,5 +12,7 @@ end
 describe "caesar_cipher method" do
   it "return encryted string" do
     expect(caesar_cipher("What a string!", 5)).to eq("Bmfy f xywnsl!")
+    expect(caesar_cipher("Caesar encryption test;-)", 27)).to eq("Dbftbs fodszqujpo uftu;-)")
+    expect(caesar_cipher("Caesar encryption test;-)", 26)).to eq("Caesar encryption test;-)")
   end
 end
